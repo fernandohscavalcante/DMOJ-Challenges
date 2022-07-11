@@ -1,0 +1,59 @@
+b = [
+    ["1", 461],
+    ["2", 431],
+    ["3", 420],
+    ["4", 0]
+]
+
+dr = [
+    ["1", 130],
+    ["2", 160],
+    ["3", 118],
+    ["4", 0]
+]
+
+s = [
+    ["1", 100],
+    ["2", 57],
+    ["3", 70],
+    ["4", 0]
+]
+
+de = [
+    ["1", 167],
+    ["2", 266],
+    ["3", 75],
+    ["4", 0]
+]
+
+#Lists with order types
+    #b = burgers, dr = drinks, s = side orders, de = desserts
+    
+brg = int(input())
+sord = int(input())
+drk = int(input())
+dess = int(input())
+
+def cbrg():
+    for i in range(brg):
+        calb = b[brg-1][1]
+        return calb
+
+def csord():
+    for i in range(sord):
+        cals = s[sord-1][1]
+        return cals
+
+def cdrk():
+    for i in range(drk):
+        caldr = dr[drk-1][1]
+        return caldr
+
+def cdess():
+    for i in range(dess):
+        calde = de[dess-1][1]
+        return calde
+
+
+caltot = cbrg() + csord() + cdrk() + cdess()
+print("Your total Calorie count is " + str(caltot) + ".")

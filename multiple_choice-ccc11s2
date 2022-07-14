@@ -1,0 +1,17 @@
+quest = int(input())
+score = 0
+stud = []
+prof = []
+
+for i in range(quest):
+    ans = input()
+    stud.append(ans)
+for i in range(quest):
+    gab = input()
+    prof.append(gab)
+
+results = [stud[i] == prof[i] for i in range(quest)]
+
+grade = sum(results)
+
+print(grade)
